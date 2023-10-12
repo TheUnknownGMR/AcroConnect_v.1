@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="LOGIN"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutCompat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+<!--    app:cardBackgroundColor="#222831"-->
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="330dp"
+        android:layout_height="500dp"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/carda"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="5dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="TEACHERS ID"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/etUserid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="7dp"
+            android:textColor="@color/white"
+            android:background="@drawable/cardb"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/poppins_bold"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="5dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="PASSWORD"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etUserpw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="7dp"
+            android:textColor="@color/white"
+            android:background="@drawable/cardb"
+            android:fontFamily="@font/poppins_bold"
+            android:inputType="textPassword"
+            />
+
+        <TextView
+            android:id="@+id/tvLoginerror"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="empty prompt"
+            android:textColor="#FF0000"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cardb"
+            app:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:text="LOGIN"
+            android:fontFamily="@font/archivo_black"
+            android:layout_marginTop="50dp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

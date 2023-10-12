@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "526842107711",
+    "project_id": "acro-connect-v1",
+    "storage_bucket": "acro-connect-v1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:526842107711:android:e19b9dc1b6ad406955658a",
+        "android_client_info": {
+          "package_name": "com.unknown.acroconnect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeB2xUYFMxdUXhRb1FuW-356e91x5B9Ec"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
